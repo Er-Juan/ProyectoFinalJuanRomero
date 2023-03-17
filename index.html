@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JuanRomero">
+    <meta name="description" content="ProyectoFinal">
+    <meta name="keyword" content="html, js, css">
+    <link rel="icon" type="image/ico" sizes="16x16" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Frutas y bombones villacruz</title>
+    <style>
+        img{
+         width: 279.5px;
+         height: 166px;
+        }
+        .img2{
+            width: 279.5px;
+            height: 166px;
+        }
+        figcaption{
+            text-align: center;
+        }
+    </style>
+</head>
+<body id="cuerpo">
+    <div>
+        <ul>
+            <li><a href="doc/MiUsuario.html"><img class="spin" src="img/user-solid.svg" alt="Mi usuario"></a></li>
+            <li><a href="doc/Carro.html"><img class="spin" src="img/cart-shopping-solid.svg" alt="Mi carro"></a></li>
+            <li><a href="doc/AtencionAlCliente.html">Atención al cliente</a></li>
+            <li><a href="doc/Nosotros.html">Nosotros</a></li>
+            <li><a href="index.html"><img src="img/house-solid.svg" class="spin" alt="Inicio"></a></li>
+            <li class="izquierda" onclick="modonoche()"><img class="imagenes" src="img/moon-regular.svg" alt="Modo noche"></li>
+            <li class="izquierda" onclick="mododia()"><img class="imagenes" src="img/sun-regular.svg" alt="Modo dia"></li>
+        </ul>
+    </div>
+    <h1>Frutas y bombones villacruz</h1>
+    <script>
+        function modonoche(){
+            document.getElementById(`cuerpo`).style.background=`black`;
+            document.getElementById(`cuerpo`).style.color=`white`;
+        }
+        function mododia() {
+            document.getElementById(`cuerpo`).style.background=`white`;
+            document.getElementById(`cuerpo`).style.color=`black`;
+        }
+    </script>
+    <div style="display: flex;flex-direction: row;">
+        <figure>
+            <a href="doc/NuecesChoco.html"><img src="img/nuecesconchocolate1.png" alt="Nueces con Chocolate" loading="lazy"></a>
+            <figcaption>Nueces con chocolate<br>€4,50</figcaption>
+        </figure>
+        <figure>
+            <a href="doc/AlmendrasChoco.html"><img src="img/almendraschoco.png" alt="Almendras con Chocolate" loading="lazy"></a>
+            <figcaption>Almendras con chocolate<br>€4,50</figcaption>
+        </figure>
+        <figure>
+            <a href="doc/PistachosChoco.html"><img src="img/pistachos1.png" alt="Pistachos con chocolate" loading="lazy" class="img2"></a>
+            <figcaption>Pistachos con chocolate<br>€4,95</figcaption>
+        </figure>
+        <figure>
+            <a href="doc/HigosChoco.html"><img src="img/higo1.png" alt="Higos secos con chocolate" loading="lazy" class="img2"></a>
+            <figcaption>Higos secos con chocolate<br>€3,95</figcaption>
+        </figure>
+    </div>
+    <footer>
+        <div>
+          <p style="text-align:right">&copy; 2023 Villacruuz</p>
+          <div style="text-align: left;"><span style="font-size: 20px;float: right;">Redes sociales</span><a href="https://www.instagram.com/bombondehigovillacruz/?hl=es" class="ancla"><img src="img/instagram.svg" alt="instagram" loading="lazy" class="imagenes"></a><a href="https://www.instagram.com/bombondehigovillacruz/?hl=es" class="ancla"><img src="img/facebook.svg" alt="facebook" loading="lazy" class="imagenes"></a></div>
+        </div>
+    </footer>
+</body>
+</html>

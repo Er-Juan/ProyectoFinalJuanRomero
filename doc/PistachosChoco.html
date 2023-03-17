@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JuanRomero">
+    <meta name="description" content="ProyectoFinal">
+    <meta name="keyword" content="html, js, css">
+    <link rel="icon" type="image/ico" sizes="16x16" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/user.js"></script>
+    <title>Frutas y bombones villacruz</title>
+    <style>
+    .product{
+        float: left;
+        width: 590px;
+        height: 332px;
+        margin-right: 100px;
+    }
+    </style>
+</head>
+<body id="cuerpo">
+    <div>
+        <ul>
+            <li><a href="MiUsuario.html"><img class="spin" src="../img/user-solid.svg" alt="Mi usuario" loading="lazy"></a></li>
+            <li><a href="Carro.html"><img class="spin" src="../img/cart-shopping-solid.svg" alt="Mi carro" loading="lazy"></a></li>
+            <li><a href="AtencionAlCliente.html">Atención al cliente</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="../index.html"><img src="../img/house-solid.svg" class="spin" alt="Inicio" loading="lazy"></a></li>
+            <li class="izquierda" onclick="modonoche()"><img class="imagenes" src="../img/moon-regular.svg " alt="Modo noche" loading="lazy"></li>
+            <li class="izquierda" onclick="mododia()"><img class="imagenes" src="../img/sun-regular.svg" alt="Modo dia" loading="lazy"></li>
+        </ul>
+    </div>
+    <h1>Frutas y bombones villacruz</h1>
+    <script>
+        function modonoche(){
+            document.getElementById(`cuerpo`).style.background=`black`;
+            document.getElementById(`cuerpo`).style.color=`white`;
+        }
+        function mododia() {
+            document.getElementById(`cuerpo`).style.background=`white`;
+            document.getElementById(`cuerpo`).style.color=`black`;
+        }
+    </script>
+    <div>
+    <figure>
+        <img src="../img/pistachos1.png" alt="Almendras con chocolate" loading="lazy" class="product">
+    </figure>
+    <figure>
+        <img src="../img/pistachos2.png" alt="Almendras con chocolate" loading="lazy" class="product">
+    </figure>
+        <div style="text-align: center;" class="textos">
+        Pistachos con Chocolate<br>
+        €4,95 <br>
+        Impuesto incluido. Los gastos de envío se calculan<br>
+        en la pantalla de pagos.
+        <hr>
+        <br>
+        <p><a href="Carro.html">Agregar al carrito</a></p><br>
+        <p style="text-align: justify;">
+            Bolsa de 200 gramos de pistachos tostados recubiertos de delicioso chocolate con leche. Al igual que con el resto de nuestros frutos secos con chocolate, el intenso sabor del pistacho predomina sobre el chocolate potenciando su sabor y dulzor.<br><br>
+            <strong>Ingredientes:</strong> Pistachos (60%); Cobertura (40%): azúcar, manteca de cacao, leche desnatada en polvo, pasta de cacao, lactosuero en polvo (leche), materia grasa láctea anhidra, leche entera en polvo, emulgente: lecitina de soja, aroma natural de vainilla. Puede contener trazas de otros frutos de cáscara.<br>
+        </p>
+        </div>
+    </div>
+    <footer>
+        <div>
+          <p style="text-align:right">&copy; 2023 Villacruuz</p>
+          <div style="text-align: left;"><span style="font-size: 20px;float: right;">Redes sociales</span><a href="https://www.instagram.com/bombondehigovillacruz/?hl=es" class="ancla"><img src="../img/instagram.svg" alt="instagram" loading="lazy" class="imagenes"></a><a href="https://www.instagram.com/bombondehigovillacruz/?hl=es" class="ancla"><img src="../img/facebook.svg" alt="facebook" loading="lazy" class="imagenes"></a></div>
+        </div>
+    </footer> 
+</body>
+</html>

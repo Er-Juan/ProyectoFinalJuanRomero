@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JuanRomero">
+    <meta name="description" content="ProyectoFinal">
+    <link rel="icon" type="image/ico" sizes="16x16" href="../img/favicon.ico">
+    <meta name="keyword" content="html, js, css">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Frutas y bombones villacruz</title>
+</head>
+<body id="cuerpo">
+    <div>
+        <ul>
+            <li><a href="MiUsuario.html"><img class="spin" src="../img/user-solid.svg" alt="Mi usuario" loading="lazy"></a></li>
+            <li><a href="Carro.html"><img class="spin" src="../img/cart-shopping-solid.svg" alt="Mi carro" loading="lazy"></a></li>
+            <li><a href="AtencionAlCliente.html">Atención al cliente</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="../index.html" rel=""><img src="../img/house-solid.svg" class="spin" alt="Inicio" loading="lazy"></a></li>
+            <li class="izquierda" onclick="modonoche()"><img class="imagenes" src="../img/moon-regular.svg " alt="Modo noche" loading="lazy"></li>
+            <li class="izquierda" onclick="mododia()"><img class="imagenes" src="../img/sun-regular.svg" alt="Modo dia" loading="lazy"></li>
+        </ul>
+    </div>
+    <h1>Frutas y bombones villacruz</h1>
+    <script>
+        function modonoche(){
+            document.getElementById(`cuerpo`).style.background=`black`;
+            document.getElementById(`cuerpo`).style.color=`white`;
+        }
+        function mododia() {
+            document.getElementById(`cuerpo`).style.background=`white`;
+            document.getElementById(`cuerpo`).style.color=`black`;
+        }
+    </script>
+    <h2>Bienvenido a atención al cliente</h2>
+    <div>
+        <form action="/action_page.php" class="main"> 
+            <label for="fname">Nombre:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+            <label for="lname">Apellidos:</label><br>
+                <input type="text" id="lname" name="lname" value=""><br>
+            <label for="email">Ponga su email:</label><br>
+                <input type="email" id="email" name="email" value=""><br>
+            <label for="comentario">Comente su problema:</label><br>
+                <textarea id="comentario" name="comentario" rows="10" cols="50"></textarea><br><br>
+                <input onclick="alert('Se ha enviado su comentario correctamente')" type="submit" id="sumbit" name="sumbit">
+        </form>
+    </div>
+    <footer>
+        <div>
+          <p style="text-align:right">&copy; 2023 Villacruuz</p>
+          <div style="text-align: left;"><span style="font-size: 20px;float: right;">Redes sociales</span><a href="https://www.instagram.com/bombondehigovillacruz/?hl=es" class="ancla"><img src="../img/instagram.svg" alt="instagram" loading="lazy" class="imagenes"></a><a href="https://www.instagram.com/bombondehigovillacruz/?hl=es" class="ancla"><img src="../img/facebook.svg" alt="facebook" loading="lazy" class="imagenes"></a></div>
+        </div>
+    </footer> 
+</body>
+</html>
